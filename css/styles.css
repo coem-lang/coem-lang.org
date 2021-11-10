@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "IBM Plex Serif", serif;
+}
+
+a {
+  color: blue;
+}
+
+.link-button {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  border: 1px solid currentColor;
+  padding: 0.5em 0.8em;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+/*
+      ___       __   ___  __
+|__| |__   /\  |  \ |__  |__)
+|  | |___ /~~\ |__/ |___ |  \
+
+*/
+
+header {
+  margin: 20px 100px;
+  /* display: grid; */
+  /* grid-template-columns: 20% 1fr; */
+  /* gap: 20px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  margin: 0;
+  margin-top: -3px;
+}
+
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav__items {
+  margin: 0;
+  display: flex;
+  margin-left: 25px;
+}
+
+.nav__item a {
+  display: inline-block;
+  padding: 10px;
+}
+
+/*
+
+ |\/|  /\  | |\ |
+ |  | /~~\ | | \|
+
+*/
+
+main {
+  margin: 100px;
+  display: grid;
+  /* padding: 100px; */
+  gap: 50px;
+}
+
+main > div {
+  max-width: 600px;
+  margin: auto;
+}
+
+.intro {
+  font-size: 1.5em;
+}
+
+.example {
+  margin: 2em 0;
+}
+
+pre {
+  padding: 2em;
+  background-color: #f9f9f9;
+}
+
+code {
+  font-size: 1.5em;
+  font-family: "IBM Plex Serif", serif;
+}
+
+/*
+ ___  __   __  ___  ___  __
+|__  /  \ /  \  |  |__  |__)
+|    \__/ \__/  |  |___ |  \
+
+*/
+
+footer {
+  margin: 20px 100px;
+}
