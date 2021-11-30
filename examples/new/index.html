@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coem | Example: New</title>
+  <link href="//fonts.cdnfonts.com/css/ibm-plex-serif-2" rel="stylesheet">
+  <link rel="stylesheet" href="lib/codemirror.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <script src="lib/codemirror.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1 class="title"><a href="/">Coem</a></h1>
+    <nav class="nav">
+      <ul class="nav__items">
+        <li class="nav__item"><a href="/">Home</a></li>
+        <li class="nav__item"><a href="/about">About</a></li>
+        <li class="nav__item">Examples</li>
+        <li class="nav__item">Reference</li>
+        <li class="nav__item"><a href="//editor.coem-lang.org">Editor</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="intro">
+      <h2>New<span class="filename-ext">.coem</span></h2>
+      <button disabled>Open in editor</button>
+    </div>
+    <div class="coem">
+      <div class="source"><pre><code>let me|I
+
+while—I am true—:
+    let me be anew——
+    me.
+
+to anew——:
+    & maybe.</code></pre></div>
+      <div class="output"><pre><code>
+
+
+
+
+
+
+
+</code></pre></div>
+    </div>
+
+    <div>
+      <h2>Walkthrough</h2>
+
+      <p>First, we define a variable that, using the pipe operator, can be referred to either by me or I.</p>
+      <pre><code>let me|I</code></pre>
+
+      <p>Next is a while loop. As long as the condition for the while loop is true, it will perform the code inside. The condition here is that the variable I is equal to the boolean value of true.</p>
+      <pre><code>while—I am true—:</code></pre>
+
+      <p>Within the while loop, the first statement sets the me variable to the return value of the anew function, which is defined later. The second statement prints the value of the me variable, and the period indicates the end of the function.</p>
+      <pre><code>    let me be anew——
+    me.</code></pre>
+
+      <p>The next block defines the anew function using the to keyword. It doesn't take any parameters, so it just has two empty em dashes.</p>
+      <pre><code>to anew——:</code></pre>
+
+      <p>In the function, nothing is defined or printed, but it does have a return statement. The ampersand is analogous to the return keyword in other programming languages. The maybe keyword is a special keyword that has a 50% chance of returning either true or false. This means that, when the function is called, it’ll return either true or false, so that, when we set the me variable, it’ll be either true or false, each time, and eventually finish the while loop.</p>
+      <pre><code>    & maybe.</code></pre>
+    </div>
+  </main>
+
+  <footer>
+    <p>A project by <a href="https://whykatherine.github.io">Katherine Yang</a>. Contribute on <a href="https://github.com/coem">GitHub</a>.</p>
+  </footer>
+
+</body>
+</html>
