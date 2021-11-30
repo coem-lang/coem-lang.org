@@ -125,8 +125,20 @@ pre {
 }
 
 code {
-  font-size: 1.5em;
+  /* font-size: 1.5em; */
   font-family: "IBM Plex Serif", serif;
+}
+
+.coem {
+  width: 100%;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 20px;
+}
+
+.filename-ext {
+  color: #aaa;
 }
 
 /*
