@@ -86,6 +86,22 @@ header {
   display: inline-block;
 }
 
+#editor-link {
+  position: relative;
+}
+
+#editor-link:hover::after {
+  content: "Coming soon!";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color: grey;
+  background-color: rgba(255,255,255,0.9);
+  padding: 0.2em 0.5em;
+  font-size: 0.6em;
+  width: 110%;
+}
+
 /*
 
  |\/|  /\  | |\ |
