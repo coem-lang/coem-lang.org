@@ -68,6 +68,7 @@ code .dot:hover::after { content: "Ends a block."; }
 code .to:hover::after { content: "Declares a function."; }
 code .print:hover::after { content: "Prints contents to the output area."; }
 code .know:hover::after { content: "Alias for the print function."; }
+code .say:hover::after { content: "Alias for the print function."; }
 code .emdash:hover::after { content: "Holds arguments for a conditional, loop, or function." }
 code .ampersand:hover::after { content: "Returns the following value."; }
 code .comma:hover::after { content: "Separates arguments in a list."; }
