@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>proto-coem 3</title>
+  <link href="//fonts.cdnfonts.com/css/ibm-plex-serif-2" rel="stylesheet">
   <style>
     *,
     *::before,
@@ -55,6 +56,38 @@
     .string .quote {
       opacity: 0.5;
     }
+    .comment {
+      opacity: 0.5;
+    }
+    .comment .symbol {
+      font-style: normal;
+    }
+    .comment:hover {
+      background-color: rgba(0,0,0,0.05);
+    }
+    .token:hover::after {
+      position: absolute;
+      top: -90%;
+      left: 0;
+      color: grey;
+      background-color: rgba(255,255,255,0.9);
+      padding: 0.2em 0.5em;
+      font-size: 0.6em;
+      opacity: 1 !important;
+    }
+    .comment:hover::after { content: "Comment, denoted by either a * (star/asterisk) or a † (dagger)."; }
+    .let:hover::after { content: "Declares a variable."; }
+    .var:hover::after { content: "Variable name."; }
+    .memyselfI:hover::after { content: "RegEx variable name. Matches me, myself, or I."; }
+    .be:hover::after { content: "Assigns the right expressions to the left token."; }
+    .string:hover::after { content: "String."; }
+    .if:hover::after { content: "Performs the actions in the block if the condition is true."; }
+    .am:hover::after { content: "Compares the left and right expressions."; }
+    .colon:hover::after { content: "Begins a block."; }
+    .dot:hover::after { content: "Ends a block."; }
+    .to:hover::after { content: "Declares a function."; }
+    .know:hover::after { content: "Alias for the print function."; }
+    .emdash:hover::after { content: "Holds arguments for a conditional, loop, or function." }
   </style>
 </head>
 <body>
@@ -65,16 +98,27 @@
   <span class="token var">me</span><span class="token operator">.</span>
 
 <span class="token">to</span> <span class="token var">anew</span><span class="token operator">—</span><span class="token operator">—</span><span class="token operator">:</span>
-  <span class="token operator">&</span> <span class="token value">maybe</span><span class="token operator">.</span></p>
-  <p id="output"></p> -->
-  <p id="source"><span class="token">let</span> <span class="token var">se(e|a)</span> <span class="token">be</span> <span class="token string"><span class="quote">“</span>blue<span class="quote">”</span></span>
-<span class="token">print</span> <span class="token var">see</span> <span class="token operator">+</span> <span class="token string"><span class="quote">“</span> <span class="quote">”</span></span> <span class="token operator">+</span> <span class="token var">sea</span>
+  <span class="token operator">&</span> <span class="token value">maybe</span><span class="token operator">.</span></p> -->
+
+  <!-- <p id="source"><span class="token">let</span> <span class="token var">se(e|a)</span> <span class="token">be</span> <span class="token string"><span class="quote">“</span>blue<span class="quote">”</span></span>
+<span class="token">know</span><span class="token operator">—</span><span class="token var">see</span><span class="token operator">,</span> <span class="token var">sea</span><span class="token operator">—</span>
 
 <span class="token">let</span> <span class="token var">mis(t|sed)</span> <span class="token">be</span> <span class="token string"><span class="quote">“</span>thick<span class="quote">”</span></span>
-<span class="token">print</span> <span class="token var">mist</span> <span class="token operator">+</span> <span class="token string"><span class="quote">“</span> <span class="quote">”</span></span> <span class="token operator">+</span> <span class="token var">missed</span>
+<span class="token">know</span><span class="token operator">—</span><span class="token var">mist</span><span class="token operator">,</span> <span class="token var">missed</span><span class="token operator">—</span>
     
 <span class="token">let</span> <span class="token var">mou?rning</span> <span class="token">be</span> <span class="token string"><span class="quote">“</span>dark<span class="quote">”</span></span>
-<span class="token">print</span> <span class="token var">morning</span> <span class="token">is</span> <span class="token var">mourning</span></p>
+<span class="token">know</span><span class="token operator">—</span><span class="token var">morning</span> <span class="token">is</span> <span class="token var">mourning</span><span class="token operator">—</span></p> -->
+
+
+  <p id="source"><span class="token comment"><span class="symbol">*</span> this is a reminder</span>
+
+<span class="token let">let</span> <span class="token var memyselfI">me|myself|I</span> <span class="token be">be</span> <span class="token string"><span class="quote">“</span>present<span class="quote">”</span></span>
+<span class="token if">if</span><span class="token operator emdash">—</span><span class="token var">I</span> <span class="token am">am</span> <span class="token string"><span class="quote">“</span>present<span class="quote">”</span></span><span class="token operator emdash">—</span><span class="token operator colon">:</span>
+    <span class="token let">let</span> <span class="token var">me</span> <span class="token var">breathe</span><span class="token operator emdash">—</span><span class="token operator emdash">—</span><span class="token operator dot">.</span>
+
+<span class="token to">to</span> <span class="token var">breathe</span><span class="token operator emdash">—</span><span class="token operator emdash">—</span><span class="token operator colon">:</span>
+    <span class="token comment">* in and out, and thus I</span>
+    <span class="token know">know</span><span class="token operator emdash">—</span><span class="token var">myself</span><span class="token operator emdash">—</span><span class="token operator dot">.</span></p>
   <p id="output"></p>
 </body>
 </html>

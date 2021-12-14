@@ -115,26 +115,30 @@ main > div {
   color: #999;
 }
 
+.help {
+  font-style: italic;
+}
+
 .example {
   margin: 2em 0;
 }
 
 pre {
-  padding: 5em;
+  padding: 4em;
   background-color: #f9f9f9;
 }
 
 code {
-  /* font-size: 1.5em; */
   font-family: "IBM Plex Serif", serif;
 }
 
 .coem {
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px;
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 20px;
+  font-size: 1.5em;
 }
 
 .filename-ext {
