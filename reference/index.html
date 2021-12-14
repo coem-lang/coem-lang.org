@@ -7,6 +7,7 @@
   <meta name="description" content="A poetic programing language.">
   <link href="//fonts.cdnfonts.com/css/ibm-plex-serif-2" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/examples.css">
 
   <!-- favicon -->
   <link rel="icon" href="/assets/img/logo/logo-bg-32.png" sizes="32x32">
@@ -43,28 +44,32 @@
       <h2>Operators</h2>
       <dl>
         <div>
-          <dt>: (colon)</dt>
+          <dt><span class="token operator colon">:</span> (colon)</dt>
           <dd>Indicates the start of a block, such as a function, if statement, or while statement.</dd>
         </div>
         <div>
-          <dt>, (comma)</dt>
+          <dt><span class="token operator comma">,</span> (comma)</dt>
           <dd>Separates parameters or arguments.</dd>
         </div>
         <div>
-          <dt>. (period / full stop / dot)</dt>
+          <dt><span class="token operator dot">.</span> (period / full stop / dot)</dt>
           <dd>Indicates the end of a block, such as a function, if statement, or while statement.</dd>
         </div>
         <div>
-          <dt>—— (two em dashes)</dt>
-          <dd>Indicates a function. Parameters/arguments go in between the two dashes.</dd>
+          <dt><span class="token operator emdash">—</span><span class="token operator emdash">—</span> (two em dashes)</dt>
+          <dd>Comes in pairs and indicates a function, if statement, or while loop. Parameters/arguments go in between the two dashes.</dd>
         </div>
         <div>
-          <dt>& (ampersand)</dt>
+          <dt><span class="token operator ampersand">&</span> (ampersand)</dt>
           <dd>Returns a value from a block, such as a function. Similar to the return keyword in other programming languages.</dd>
         </div>
         <div>
-          <dt>“” (quotation marks)</dt>
+          <dt><span class="token string"><span class="quote">“</span><span class="quote">”</span></span> (quotation marks)</dt>
           <dd>Indicates a string.</dd>
+        </div>
+        <div>
+          <dt><span class="token comment"><span class="symbol">*</span></span> (star / asterisk), <span class="token comment"><span class="symbol">†</span></span> (dagger)</dt>
+          <dd>Begins a comment.</dd>
         </div>
       </dl>
     </div>
@@ -73,28 +78,60 @@
       <h2>Keywords</h2>
       <dl>
         <div>
-          <dt>let</dt>
+          <dt><code><span class="token let">let</span></code></dt>
           <dd>Defines or redefines a variable.</dd>
         </div>
         <div>
-          <dt>be</dt>
+          <dt><span class="token be">be</span></dt>
           <dd>Sets the value of a variable.</dd>
         </div>
         <div>
-          <dt>is, am, are</dt>
+          <dt><span class="token comparison">is</span>, <span class="token comparison">am</span>, <span class="token comparison">are</span></dt>
           <dd>Compares two values. Similar to the == (two equal signs) operator in other programming languages.</dd>
         </div>
         <div>
-          <dt>not</dt>
+          <dt><span class="token not">not</span></dt>
           <dd>Negates the following value. Similar to the ! (bang) operator in other programming languages.</dd>
         </div>
         <div>
-          <dt>print</dt>
+          <dt><span class="token boolean">true</span></dt>
+          <dd>The logical value “true”.</dd>
+        </div>
+        <div>
+          <dt><span class="token boolean">false</span></dt>
+          <dd>The logical value “false”.</dd>
+        </div>
+        <div>
+          <dt><span class="token nothing">nothing</span></dt>
+          <dd>Equivalent to “null”.</dd>
+        </div>
+        <div>
+          <dt><span class="token print">print</span></dt>
           <dd>Prints the following value.</dd>
         </div>
         <div>
-          <dt>maybe</dt>
+          <dt><span class="token maybe">maybe</span></dt>
           <dd>Equals true or false randomly.</dd>
+        </div>
+        <div>
+          <dt><span class="token and">and</span></dt>
+          <dd>Compares two expressions and returns true if both are true.</dd>
+        </div>
+        <div>
+          <dt><span class="token or">or</span></dt>
+          <dd>Compares two expressions and returns true if one or both are true.</dd>
+        </div>
+        <div>
+          <dt><span class="token if">if</span></dt>
+          <dd>Performs the actions in the block if the condition is true.</dd>
+        </div>
+        <div>
+          <dt><span class="token else">else</span></dt>
+          <dd>Follows an if statement and executes if the condition is false.</dd>
+        </div>
+        <div>
+          <dt><span class="token while">while</span></dt>
+          <dd>Performs the actions in the block repeatedly while the condition is true.</dd>
         </div>
       </dl>
     </div>

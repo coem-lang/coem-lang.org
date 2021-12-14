@@ -40,11 +40,7 @@
   font-style: normal;
 }
 
-.comment:hover {
-  background-color: rgba(0,0,0,0.05);
-}
-
-.token:hover::after {
+code .token:hover::after {
   position: absolute;
   top: -90%;
   left: 0;
@@ -55,29 +51,34 @@
   opacity: 1 !important;
 }
 
-.comment:hover::after { content: "Comment, denoted by either a * (star/asterisk) or a † (dagger)."; }
-.let:hover::after { content: "Declares a variable."; }
-.var:hover::after { content: "Variable name."; }
-.function:hover::after { content: "Function name."; }
-.be:hover::after { content: "Assigns the right expressions to the left token."; }
-.string:hover::after { content: "String."; }
-.if:hover::after { content: "Performs the actions in the block if the condition is true."; }
-.while:hover::after { content: "Performs the actions in the block as long as the condition is true."; }
-.boolean:hover::after { content: "Boolean of true or false."; }
-.nothing:hover::after { content: "Null value."; }
-.comparison:hover::after { content: "Compares the left and right expressions."; }
-.colon:hover::after { content: "Begins a block."; }
-.dot:hover::after { content: "Ends a block."; }
-.to:hover::after { content: "Declares a function."; }
-.print:hover::after { content: "Prints contents to the output area."; }
-.know:hover::after { content: "Alias for the print function."; }
-.emdash:hover::after { content: "Holds arguments for a conditional, loop, or function." }
-.ampersand:hover::after { content: "Returns the following value."; }
-.comma:hover::after { content: "Separates arguments in a list."; }
+code .comment:hover::after { content: "Comment, denoted by either a * (star/asterisk) or a † (dagger)."; }
+code .let:hover::after { content: "Declares a variable."; }
+code .var:hover::after { content: "Variable name."; }
+code .function:hover::after { content: "Function name."; }
+code .be:hover::after { content: "Assigns the right expressions to the left token."; }
+code .string:hover::after { content: "String."; }
+code .if:hover::after { content: "Performs the actions in the block if the condition is true."; }
+code .else:hover::after { content: "Performs the actions in the block if the condition is false."; }
+code .while:hover::after { content: "Performs the actions in the block as long as the condition is true."; }
+code .boolean:hover::after { content: "Boolean of true or false."; }
+code .nothing:hover::after { content: "Null value."; }
+code .comparison:hover::after { content: "Compares the left and right expressions."; }
+code .colon:hover::after { content: "Begins a block."; }
+code .dot:hover::after { content: "Ends a block."; }
+code .to:hover::after { content: "Declares a function."; }
+code .print:hover::after { content: "Prints contents to the output area."; }
+code .know:hover::after { content: "Alias for the print function."; }
+code .emdash:hover::after { content: "Holds arguments for a conditional, loop, or function." }
+code .ampersand:hover::after { content: "Returns the following value."; }
+code .comma:hover::after { content: "Separates arguments in a list."; }
+code .not:hover::after { content: "Negates the following value."; }
+code .maybe:hover::after { content: "Equals true or false randomly."; }
+code .and:hover::after { content: "Compares two expressions and returns true if both are true."; }
+code .or:hover::after { content: "Compares two expressions and returns true if one or both are true."; }
 
-.memyselfI:hover::after { content: "RegEx variable name. Matches me, myself, or I."; }
-.sleep:hover::after { content: "RegEx variable name. Matches sleep or seep."; }
-.meI:hover::after { content: "RegEx variable name. Matches me or I."; }
-.see:hover::after { content: "RegEx variable name. Matches see or sea."; }
-.mist:hover::after { content: "RegEx variable name. Matches mist or missed."; }
-.mourning:hover::after { content: "RegEx variable name. Matches mourning or morning."; }
+code .memyselfI:hover::after { content: "RegEx variable name. Matches me, myself, or I."; }
+code .sleep:hover::after { content: "RegEx variable name. Matches sleep or seep."; }
+code .meI:hover::after { content: "RegEx variable name. Matches me or I."; }
+code .see:hover::after { content: "RegEx variable name. Matches see or sea."; }
+code .mist:hover::after { content: "RegEx variable name. Matches mist or missed."; }
+code .mourning:hover::after { content: "RegEx variable name. Matches mourning or morning."; }
