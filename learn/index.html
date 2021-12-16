@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coem | Learn</title>
+  <meta name="description" content="A poetic programing language.">
+  <link href="//fonts.cdnfonts.com/css/ibm-plex-serif-2" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/examples.css">
+
+  <!-- favicon -->
+  <link rel="icon" href="/assets/img/logo/logo-bg-32.png" sizes="32x32">
+  <link rel="icon" href="/assets/img/logo/logo-bg-57.png" sizes="57x57">
+  <link rel="icon" href="/assets/img/logo/logo-bg-76.png" sizes="76x76">
+  <link rel="icon" href="/assets/img/logo/logo-bg-96.png" sizes="96x96">
+  <link rel="icon" href="/assets/img/logo/logo-bg-128.png" sizes="128x128">
+  <link rel="icon" href="/assets/img/logo/logo-bg-192.png" sizes="192x192">
+  <link rel="icon" href="/assets/img/logo/logo-bg-228.png" sizes="228x228">
+</head>
+<body>
+
+  <header>
+    <h1 class="title"><a href="/">Coem</a></h1>
+    <nav class="nav">
+      <ul class="nav__items">
+        <li class="nav__item"><a href="/">Home</a></li>
+        <li class="nav__item"><a href="/about">About</a></li>
+        <li class="nav__item"><a href="/learn">Learn</a></li>
+        <li class="nav__item"><a href="/examples">Examples</a></li>
+        <li class="nav__item"><a href="/reference">Reference</a></li>
+        <li class="nav__item" id="editor-link">Editor</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="intro">
+      <h2>Learn</h2>
+      <p>Basic patterns to get you started.</p>
+    </div>
+
+    <div>
+      <h2>Declaring a variable</h2>
+      <p>To declare a variable:</p>
+      <pre><code><span class="token let">let</span> <span class="placeholder">name</span> <span class="token be">be</span> <span class="placeholder">value</span></code></pre>
+      <p><code><span class="token let">let</span></code> begins the variable declaration. You can name the variable anything—try a noun! A special thing about names in this language is that you can use regular expressions in them.</p>
+      <h3>Regular expressions</h3>
+      <p>Regular expressions are a sequence of characters that specify a search pattern. With a regular expression, you can describe a range of strings instead of just one. Try the pipe operator, the plus operator, the question operator, and parentheses for grouping.</p>
+      <p><a href="https://regexr.com/">RegExr</a> is a great resource to play around with different expressions.</p>
+    </div>
+
+    <div>
+      <h2>Declaring a function</h2>
+      <p>To declare a function:</p>
+      <pre><code><span class="token to">to</span> <span class="placeholder">name</span><span class="token operator emdash">—</span><span class="token operator colon">:</span>
+    <span class="token comment"><span class="symbol">*</span> do things here</span>.</code></pre>
+      <p><code><span class="token to">to</span></code> begins the function declaration. You can name it anything—try a verb! You can also use regular expressions for function names. The colon begins the block and the dot ends it.</p>
+      <h3>Returning a value</h3>
+      <p>To return a value from a function:</p>
+      <pre><code><span class="token to">to</span> <span class="placeholder">name</span><span class="token operator emdash">—</span><span class="token operator colon">:</span>
+    <span class="token operator ampersand">&</span> <span class="placeholder">value</span><span class="token operator dot">.</span></code></pre>
+        <p>The ampersand takes the place of the return keyword in other languages.</p>
+    </div>
+
+    <div>
+      <h2>Writing comments</h2>
+      <p>To write a comment:</p>
+      <pre><code><span class="token comment"><span class="symbol">*</span> this is a comment</span>
+<span class="token comment"><span class="symbol">†</span> this is one too</span>
+<span class="token comment"><span class="symbol">*</span> you can use a star like this</span>
+<span class="token comment"><span class="symbol">†</span> or a dagger, it's up to you!</span></code></pre>
+      <p>The star or asterisk in this language isn’t used for multiplication but for denoting comments. This usage borrows from how we use it in literature as a footnote symbol. Just for fun, the dagger is also another footnote symbol that you can use for comments. The web editor gives an easy way to insert the symbol, but you can also type <kbd>Option</kbd><kbd>T</kbd> on Mac.</p>
+    </div>
+
+    <div>
+      <h2>Describing a condition</h2>
+      <p>To write an if statement:</p>
+      <pre><code><span class="token if">if</span> <span class="placeholder">condition</span>:
+    <span class="token comment"><span class="symbol">*</span> do things if true</span>.</code></pre>
+      <p>To write a while statement:</p>
+      <pre><code><span class="token if">while</span> <span class="placeholder">condition</span>:
+    <span class="token comment"><span class="symbol">*</span> do things while true</span>.</code></pre>
+      <p>If and while statements do things in their body if the condition given is true. The difference is that if statements will perform the action just once; while statements will keep checking the condition and performing the action as long as it’s true. Similar to the function, a colon begins the block and a dot ends it.</p>
+    </div>
+
+  </main>
+
+  <footer>
+    <p><small>A project by <a href="https://whykatherine.github.io">Katherine Yang</a>. Contribute on <a href="https://github.com/coem-lang">GitHub</a>.</small></p>
+  </footer>
+
+</body>
+</html>

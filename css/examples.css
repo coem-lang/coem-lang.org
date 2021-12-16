@@ -83,3 +83,7 @@ code .meI:hover::after { content: "RegEx variable name. Matches me or I."; }
 code .see:hover::after { content: "RegEx variable name. Matches see or sea."; }
 code .mist:hover::after { content: "RegEx variable name. Matches mist or missed."; }
 code .mourning:hover::after { content: "RegEx variable name. Matches mourning or morning."; }
+
+.placeholder {
+  background-color: #e9e9e9;
+}
