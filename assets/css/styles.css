@@ -54,6 +54,10 @@ kbd {
   background-color: #e9e9e9;
 }
 
+h2 {
+  line-height: 1.2;
+}
+
 /*
       ___       __   ___  __
 |__| |__   /\  |  \ |__  |__)
@@ -211,12 +215,18 @@ main > div {
 }
 
 pre {
-  padding: 4em;
+  padding: 2em;
   background-color: #f9f9f9;
 }
+  @media (min-width: 800px) {
+    pre {
+      padding: 4em;
+    }
+  }
 
 code {
   font-family: "IBM Plex Serif", serif;
+  white-space: break-spaces;
 }
 
 .coem {
