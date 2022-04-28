@@ -51,7 +51,7 @@ code .token:hover::after {
   opacity: 1 !important;
 }
 
-code .comment:hover::after { content: "Comment, denoted by either a * (star/asterisk) or a † (dagger)."; }
+code .comment:hover::after { content: "Comment, denoted by a † (dagger)."; }
 code .let:hover::after { content: "Declares a variable."; }
 code .var:hover::after { content: "Variable name."; }
 code .function:hover::after { content: "Function name."; }
@@ -66,7 +66,7 @@ code .comparison:hover::after { content: "Compares the left and right expression
 code .colon:hover::after { content: "Begins a block."; }
 code .dot:hover::after { content: "Ends a block."; }
 code .to:hover::after { content: "Declares a function."; }
-code .print:hover::after { content: "Prints contents to the output area."; }
+code .print:hover::after { content: "Prints contents in a comment to the right of the line."; }
 code .know:hover::after { content: "Alias for the print function."; }
 code .say:hover::after { content: "Alias for the print function."; }
 code .emdash:hover::after { content: "Holds arguments for a conditional, loop, or function." }
