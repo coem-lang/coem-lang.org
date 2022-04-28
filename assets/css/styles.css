@@ -180,11 +180,16 @@ header {
 
 main {
   /* margin: 100px 3em; */
-  margin: 100px 0;
+  margin: 50px 0;
   padding: 0 3em;
   display: grid;
   gap: 50px;
 }
+  @media (min-width: 800px) {
+    main {
+      margin: 100px 0;
+    }
+  }
 
 main > div {
   max-width: 600px;
@@ -193,20 +198,30 @@ main > div {
 
 .intro {
   max-width: 800px;
-  font-size: 2.5em;
+  font-size: 1.2em;
   text-align: center;
 }
+  @media (min-width: 800px) {
+    .intro {
+      font-size: 2.5em;
+    }
+  }
 
 .intro blockquote {
   line-height: 1;
 }
 
 .intro p {
-  font-size: 0.5em;
   color: #999;
 }
+  @media (min-width: 800px) {
+    .intro p {
+      font-size: 0.5em;
+    }
+  }
 
 .help {
+  text-align: center;
   font-style: italic;
 }
 
@@ -232,11 +247,16 @@ code {
 .coem {
   width: 100%;
   max-width: 1000px;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  gap: 20px;
-  font-size: 1.5em;
+  /* display: grid; */
+  /* grid-template-columns: 50% 50%; */
+  /* gap: 20px; */
+  font-size: 1.2em;
 }
+  @media (min-width: 800px) {
+    .coem {
+      font-size: 1.5em;
+    }
+  }
 
 .filename-ext {
   color: #aaa;
@@ -255,5 +275,6 @@ code {
 
 footer {
   text-align: center;
-  margin: 20px 100px;
+  /* margin: 20px 100px; */
+  margin: 2em;
 }
