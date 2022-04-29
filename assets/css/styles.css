@@ -8,6 +8,7 @@ f*,
   --background-color: white;
   --text-color: black;
   --accent-color: blue;
+  --grey-color: #767676;
   --font-family: "IBM Plex Serif", serif;
 }
 
@@ -213,7 +214,7 @@ main > div {
 }
 
 .intro p {
-  color: #999;
+  color: var(--grey-color);
 }
   @media (min-width: 800px) {
     .intro p {

@@ -1,3 +1,8 @@
+:root {
+  --block-color: #e9e9e9;
+  --secondary-color: #737373;
+}
+
 .token {
   display: inline-block;
   padding: 0 0.05em;
@@ -28,16 +33,12 @@
   font-weight: 400;
 }
 
-.string .quote {
-  opacity: 0.5;
-}
-
 .comment {
-  opacity: 0.5;
+  color: var(--secondary-color);
 }
 
 .comment .symbol {
-  font-style: normal;
+  /* font-style: normal; */
 }
 
 code .token:hover::after {
@@ -85,5 +86,5 @@ code .mist:hover::after { content: "RegEx variable name. Matches mist or missed.
 code .mourning:hover::after { content: "RegEx variable name. Matches mourning or morning."; }
 
 .placeholder {
-  background-color: #e9e9e9;
+  background-color: var(--block-color);
 }
