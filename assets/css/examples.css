@@ -3,6 +3,11 @@
   --secondary-color: #737373;
 }
 
+code {
+  font-family: "IBM Plex Serif", serif;
+  white-space: break-spaces;
+}
+
 .token {
   display: inline-block;
   padding: 0 0.05em;

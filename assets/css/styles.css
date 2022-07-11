@@ -30,6 +30,11 @@ a {
   border-bottom: 1px solid currentColor;
 }
 
+a[href^="http"]:after {
+  content: "↗";
+  margin-left: 0.2em;
+}
+
 li {
   margin: 1em 0;
 }
@@ -230,7 +235,7 @@ pre {
   }
 
 code {
-  font-family: "IBM Plex Serif", serif;
+  font-family: "IBM Plex Mono", monospace;
   white-space: break-spaces;
 }
 
