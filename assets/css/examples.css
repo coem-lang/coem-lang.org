@@ -48,15 +48,18 @@ code {
 
 code .token:hover::after {
   position: absolute;
-  top: -90%;
+  bottom: 100%;
+  width: max-content;
   left: 0;
   color: grey;
-  background-color: rgba(255,255,255,0.9);
+  background-color: white;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
   padding: 0.2em 0.5em;
   font-size: 0.6em;
   opacity: 1 !important;
 }
 
+code .directive:hover::after { content: "Directive, denoted by a # (pound)."; }
 code .comment:hover::after { content: "Comment, denoted by a † (dagger)."; }
 code .let:hover::after { content: "Declares a variable."; }
 code .var:hover::after { content: "Variable name."; }
@@ -84,6 +87,7 @@ code .and:hover::after { content: "Compares two expressions and returns true if 
 code .or:hover::after { content: "Compares two expressions and returns true if one or both are true."; }
 
 code .memyselfI:hover::after { content: "RegEx variable name. Matches me, myself, or I."; }
+code .memyself:hover::after { content: "RegEx variable name. Matches me or myself."; }
 code .sleep:hover::after { content: "RegEx variable name. Matches sleep or seep."; }
 code .meI:hover::after { content: "RegEx variable name. Matches me or I."; }
 code .see:hover::after { content: "RegEx variable name. Matches see or sea."; }
