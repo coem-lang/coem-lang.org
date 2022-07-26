@@ -158,10 +158,6 @@ header {
   display: inline-block;
 }
 
-#editor-link {
-  position: relative;
-}
-
 /*
 
  |\/|  /\  | |\ |
@@ -209,6 +205,19 @@ main > div {
 .intro blockquote {
   line-height: 1;
   font-size: 2em;
+  position: relative;
+}
+
+.intro blockquote::before {
+  content: "“";
+  position: absolute;
+  margin-left: -0.5em;
+}
+
+.intro blockquote::after {
+  content: "”";
+  position: absolute;
+  margin-right: -0.5em;
 }
 
 .intro p {
