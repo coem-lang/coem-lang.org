@@ -22,7 +22,7 @@ body {
   height: 100%;
   max-width: 1200px;
   font-family: var(--font-family);
-  line-height: 1.5;
+  /* line-height: 1.5; */
 }
 
 a {
@@ -36,8 +36,16 @@ a[href^="http"]:after {
   margin-left: 0.2em;
 }
 
+/* https://type-scale.spencermortensen.com/4/3/0/1em */
+h1 { font-size: 3em; }
+h2 { font-size: 2.2795em; }
+h3 { font-size: 1.7321em; }
+h4 { font-size: 1.3161em; }
+small { font-size: .7598em; }
+
 li {
-  margin: 1em 0;
+  line-height: 1.5;
+  margin: 1.5em 0;
 }
 
 .link-button {
@@ -63,6 +71,12 @@ kbd {
 
 h2 {
   line-height: 1.2;
+}
+
+p {
+  line-height: 1.5;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 /*
@@ -225,7 +239,7 @@ main > div {
 }
   @media (min-width: 800px) {
     .intro p {
-      font-size: 0.5em;
+      font-size: 1.3161rem;
     }
   }
 
@@ -279,26 +293,32 @@ sup {
   display: none;
 }
 
-.footnote-num {
+.sidenote-num {
   display: none;
 }
 
   @media (min-width: 1200px) {
-    .footnote {
+    .sidenote {
       width: 17vw;
       position: absolute;
-      top: 335px;
+      top: 460px;
       left: -34vw;
       right: 34vw;
       color: var(--secondary-color);
       font-size: 0.8em;
     }
 
-    .footnote a {
+    .sidenote p {
+      line-height: 1.875;
+      margin-top: 1.875em;
+      margin-bottom: 1.875em;
+    }
+
+    .sidenote a {
       color: var(--secondary-accent-color);
     }
 
-    .footnote-num {
+    .sidenote-num {
       display: inline-block;
       margin-right: 1em;
     }
