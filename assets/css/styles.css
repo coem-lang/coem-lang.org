@@ -7,8 +7,9 @@ f*,
 :root {
   --background-color: white;
   --text-color: black;
+  --secondary-color: #767676;
   --accent-color: blue;
-  --grey-color: #767676;
+  --secondary-accent-color: #6666ca;
   --font-family: "IBM Plex Serif", serif;
 }
 
@@ -185,6 +186,10 @@ main {
     }
   }
 
+.about {
+  position: relative;
+}
+
 main > div {
   max-width: 600px;
   margin: auto;
@@ -207,13 +212,17 @@ main > div {
 }
 
 .intro p {
-  color: var(--grey-color);
+  color: var(--secondary-color);
 }
   @media (min-width: 800px) {
     .intro p {
       font-size: 0.5em;
     }
   }
+
+.intro p a {
+  color: var(--secondary-accent-color);
+}
 
 .help {
   text-align: center;
@@ -254,8 +263,41 @@ code {
   }
 
 .filename-ext {
-  color: #aaa;
+  color: var(--secondary-color);
 }
+
+sup {
+  display: none;
+}
+
+.footnote-num {
+  display: none;
+}
+
+  @media (min-width: 1200px) {
+    .footnote {
+      width: 17vw;
+      position: absolute;
+      top: 335px;
+      left: -34vw;
+      right: 34vw;
+      color: var(--secondary-color);
+      font-size: 0.8em;
+    }
+
+    .footnote a {
+      color: var(--secondary-accent-color);
+    }
+
+    .footnote-num {
+      display: inline-block;
+      margin-right: 1em;
+    }
+
+    sup {
+      display: inline;
+    }
+  }
 
 /*
  ___  __   __  ___  ___  __
