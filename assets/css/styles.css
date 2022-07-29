@@ -328,6 +328,65 @@ sup {
     }
   }
 
+/* REFERENCE */
+
+.toc-container {
+  /* position: fixed; */
+  /* top: 0; */
+  /* height: 100vh; */
+}
+
+@media (min-width: 800px) {
+  .ref-toc {
+    position: fixed;
+    top: 18vh;
+    left: 6vw;
+  }
+}
+
+.ref-toc ul {
+  padding-left: 2em;
+}
+
+.ref-toc li {
+  list-style-type: none;
+  margin: 0;
+}
+
+.ref-list > div {
+  margin: 10em 0;
+}
+
+.ref-list dd {
+  margin-left: 0;
+}
+
+.ref-term,
+.ref-term-variant {
+  font-size: 1.5em;
+}
+
+.ref-term-ipa {
+  color: #818081;
+  margin-left: 1em;
+}
+
+.ref-term-pos {
+  margin-bottom: -1em;
+}
+
+.ref-term-def,
+.ref-term-also {
+  margin-left: 1em;
+}
+
+.ref-term-origin-heading {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #818081;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.9em;
+}
+
 /*
  ___  __   __  ___  ___  __
 |__  /  \ /  \  |  |__  |__)

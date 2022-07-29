@@ -44,98 +44,312 @@
       <p>Operators, keywords, and native functions in the language.</p>
     </div>
 
+    <div class="toc-container">
+      <div class="sidenote ref-toc">
+        <p>Operators</p>
+        <ul>
+          <li><a href="#ampersand">ampersand</a></li>
+          <li><a href="#colon">colon</a></li>
+          <li><a href="#comma">comma</a></li>
+          <li><a href="#dagger">dagger</a></li>
+          <li><a href="#dot">dot</a></li>
+          <li><a href="#em-dash">em dash</a></li>
+          <li><a href="#quotation-marks">quotation marks</a></li>
+        </ul>
+        <p>Keywords</p>
+        <ul>
+          <li><a href="#and">and</a></li>
+          <li><a href="#be">be</a></li>
+          <li><a href="#else">else</a></li>
+          <li><a href="#false">false</a></li>
+          <li><a href="#if">if</a></li>
+          <li><a href="#is">is</a></li>
+          <li><a href="#let">let</a></li>
+          <li><a href="#maybe">maybe</a></li>
+          <li><a href="#not">not</a></li>
+          <li><a href="#nothing">nothing</a></li>
+          <li><a href="#or">or</a></li>
+          <li><a href="#print">print</a></li>
+          <li><a href="#true">true</a></li>
+          <li><a href="#while">while</a></li>
+        </ul>
+      </div>
+    </div>
+
     <div>
       <h2>Operators</h2>
-      <dl>
-        <div>
-          <dt><span class="token operator colon">:</span> (colon)</dt>
-          <dd>Indicates the start of a block, such as a function, if statement, or while statement.</dd>
+      <dl class="ref-list">
+        <div id="ampersand">
+          <dt><span class="ref-term">ampersand (&)</span> <span class="ref-term-ipa">| ˈampərˌsand |</span></dt>
+          <dd>
+            <p class="ref-term-pos">operator</p>
+            <p class="ref-term-def">an operator used to return a value from a block, such as a function.</p>
+            <pre><code><span class="token keyword to">to</span> <span class="token keyword function">say</span><span class="token operator emdash">—</span><span class="token keyword var">love</span><span class="token operator emdash">—</span><span class="token operator colon">:</span>
+    <span class="token keyword let">let</span> <span class="token keyword var">presence</span> <span class="token keyword be">be</span> <span class="token keyword var">love</span>
+    <span class="token operator ampersand">&</span> <span class="token keyword var">presence</span><span class="token operator dot">.</span></code></pre>
+            <div class="ref-term-origin">
+              <p class="ref-term-origin-heading">ORIGIN</p>
+              <p>inspired by the idea of symmetry and completion achieved by the use of the ampersand.</p>
+            </div>
+          </dd>
         </div>
-        <div>
-          <dt><span class="token operator comma">,</span> (comma)</dt>
-          <dd>Separates parameters or arguments.</dd>
+        <div id="colon">
+          <dt><span class="ref-term">colon (:)</span> <span class="ref-term-ipa">| ˈkōlən |</span></dt>
+          <dd>
+            <p class="ref-term-pos">operator</p>
+            <p class="ref-term-def">an operator used to indicate the start of a block, such as a function, if statement, or while statement.</p>
+            <pre><code><span class="token keyword to">to</span> <span class="token keyword function">inhale</span><span class="token operator emdash">—</span><span class="token operator emdash">—</span>
+    <span class="token operator ampersand">&</span> <span class="token keyword var">exhale</span><span class="token operator dot">.</span></code></pre>
+            <div class="ref-term-origin">
+              <p class="ref-term-origin-heading">ORIGIN</p>
+              <p>adapted from the similar operator in Python.</p>
+            </div>
+          </dd>
         </div>
-        <div>
-          <dt><span class="token operator dot">.</span> (period / full stop / dot)</dt>
-          <dd>Indicates the end of a block, such as a function, if statement, or while statement.</dd>
+        <div id="comma">
+          <dt><span class="ref-term">comma (,)</span> <span class="ref-term-ipa">| ˈkɒmə |</span></dt>
+          <dd>
+            <p class="ref-term-pos">operator</p>
+            <p class="ref-term-def">an operator used to separate parameters or arguments.</p>
+            <pre><code><span class="token keyword know">know</span><span class="token operator emdash">—</span><span class="token keyword var">me</span><span class="token operator comma">,</span> <span class="token keyword var">myself</span><span class="token operator comma">,</span> <span class="token keyword var">I</span><span class="token operator emdash">—</span></code></pre>
+            <div class="ref-term-origin">
+              <p class="ref-term-origin-heading">ORIGIN</p>
+              <p>adapted from the similar operators in many programming languages.</p>
+            </div>
+          </dd>
         </div>
-        <div>
-          <dt><span class="token operator emdash">—</span><span class="token operator emdash">—</span> (two em dashes)</dt>
-          <dd>Comes in pairs and indicates a function, if statement, or while loop. Parameters/arguments go in between the two dashes.</dd>
+        <div id="dagger">
+          <dt><span class="ref-term">dagger (†)</span> <span class="ref-term-ipa">| ˈdaɡər |</span></dt>
+          <dd>
+            <p class="ref-term-pos">operator</p>
+            <p class="ref-term-def">an operator used to begin a comment.</p>
+            <pre><code><span class="token comment">† to keep secrets from the compiler</span></code></pre>
+            <div class="ref-term-origin">
+              <p class="ref-term-origin-heading">ORIGIN</p>
+              <p>adapted from its use in printing to indicate a footnote if an asterisk has already been used.</p>
+            </div>
+          </dd>
         </div>
-        <div>
-          <dt><span class="token operator ampersand">&</span> (ampersand)</dt>
-          <dd>Returns a value from a block, such as a function. Similar to the return keyword in other programming languages.</dd>
+        <div id="dot">
+          <dt><span class="ref-term">dot (.)</span> <span class="ref-term-ipa">| dɒt |</span></dt>
+          <dd>
+            <p class="ref-term-pos">operator</p>
+            <p class="ref-term-def">an operator used to indicate the end of a block, such as a function, if statement, or while statement.</p>
+            <pre><code><span class="token keyword to">to</span> <span class="token keyword function">inhale</span><span class="token operator emdash">—</span><span class="token operator emdash">—</span><span class="token operator colon">:</span>
+    <span class="token operator ampersand">&</span> <span class="token keyword var">exhale</span><span class="token operator dot">.</span></code></pre>
+            <div class="ref-term-origin">
+              <p class="ref-term-origin-heading">ORIGIN</p>
+              <p>inspired by its use as the ending terminal of a sentence in English and other languages.</p>
+            </div>
+          </dd>
         </div>
-        <div>
-          <dt><span class="token string"><span class="quote">“</span><span class="quote">”</span></span> (quotation marks)</dt>
-          <dd>Indicates a string.</dd>
+        <div id="em-dash">
+          <dt><span class="ref-term">em dash (—)</span> <span class="ref-term-ipa">| ˈɛm daʃ |</span></dt>
+          <dd>
+            <p class="ref-term-pos">operator</p>
+            <p class="ref-term-def">an operator used in pairs to indicate a function, if statement, or while loop. Parameters or arguments go in between the two dashes.</p>
+            <pre><code><span class="token keyword to">to</span> <span class="token keyword function">go</span><span class="token operator emdash">—</span><span class="token keyword var">there</span><span class="token operator emdash">—</span><span class="token operator colon">:</span>
+    <span class="token operator ampersand">&</span> <span class="token keyword var">stay</span><span class="token operator dot">.</span></code></pre>
+            <div class="ref-term-origin">
+              <p class="ref-term-origin-heading">ORIGIN</p>
+              <p>adapted from the commonly used parentheses () and borrowing from the use of em dashes in writing to indicate a break in thought or additional information.</p>
+            </div>
+          </dd>
         </div>
-        <div>
-          <dt><span class="token comment"><span class="symbol">†</span></span> (dagger)</dt>
-          <dd>Begins a comment.</dd>
+        <div id="quotation-marks">
+          <dt><span class="ref-term">quotation marks (“”)</span> <span class="ref-term-ipa">| kwəʊˈteɪʃn mɑrks |</span></dt>
+          <dd>
+            <p class="ref-term-pos">operator</p>
+            <p class="ref-term-def">an operator used to hold a string.</p>
+            <pre><code><span class="token keyword let">let</span> <span class="token keyword var">me</span> <span class="token keyword be">be</span> <span class="token operator string">“whole”</span></code></pre>
+            <div class="ref-term-origin">
+              <p class="ref-term-origin-heading">ORIGIN</p>
+              <p>adapted from the similar operator in both programming languages and writing, encoded with the more refined typographical choice.</p>
+            </div>
+          </dd>
         </div>
       </dl>
     </div>
 
     <div>
       <h2>Keywords</h2>
-      <dl>
-        <div>
-          <dt><code><span class="token let">let</span></code></dt>
-          <dd>Defines or redefines a variable.</dd>
+      <dl class="ref-list">
+        <div id="and">
+          <dt><span class="ref-term">and</span> <span class="ref-term-ipa">| an(d) |</span></dt>
+          <dd>
+            <p class="ref-term-pos">keyword</p>
+            <p class="ref-term-def">a keyword used to evaluate whether two expressions are both true.</p>
+            <pre><code><span class="token keyword if">if</span><span class="token operator emdash">—</span><span class="token keyword var">you</span> <span class="token keyword and">and</span> <span class="token keyword var">I</span><span class="token operator emdash">—</span><span class="token operator colon">:</span>
+    <span class="token keyword know">know</span><span class="token operator emdash">—</span><span class="token keyword var">ourselves</span><span class="token operator emdash">—</span><span class="token operator dot">.</span></code></pre>
+            <div class="ref-term-origin">
+              <p class="ref-term-origin-heading">ORIGIN</p>
+              <p>adapted from the similar operator in Python.</p>
+            </div>
+          </dd>
         </div>
-        <div>
-          <dt><span class="token be">be</span></dt>
-          <dd>Sets the value of a variable.</dd>
+        <div id="be">
+          <dt><span class="ref-term">be</span> <span class="ref-term-ipa">| bē |</span></dt>
+          <dd>
+            <p class="ref-term-pos">keyword</p>
+            <p class="ref-term-def">a keyword used to set the value of a variable.</p>
+            <pre><code><span class="token keyword let">let</span> <span class="token keyword var">me</span> <span class="token keyword be">be</span> <span class="token keyword true">true</span></code></pre>
+            <div class="ref-term-origin">
+              <p class="ref-term-origin-heading">ORIGIN</p>
+              <p>inspired by its use in English as a copula.</p>
+            </div>
+          </dd>
         </div>
-        <div>
-          <dt><span class="token comparison">is</span>, <span class="token comparison">am</span>, <span class="token comparison">are</span></dt>
-          <dd>Compares two values. Similar to the == (two equal signs) operator in other programming languages.</dd>
+        <div id="else">
+          <dt><span class="ref-term">else</span> <span class="ref-term-ipa">| els |</span></dt>
+          <dd>
+            <p class="ref-term-pos">keyword</p>
+            <p class="ref-term-def">a keyword used after an if statement to perform the actions in the following block if the given condition is false.</p>
+            <pre><code><span class="token keyword if">if</span><span class="token operator emdash">—</span><span class="token keyword var">you</span> <span class="token keyword and">and</span> <span class="token keyword var">I</span><span class="token operator emdash">—</span><span class="token operator colon">:</span>
+      <span class="token keyword know">know</span><span class="token operator emdash">—</span><span class="token keyword var">ourselves</span><span class="token operator emdash">—</span><span class="token operator dot">.</span>
+<span class="token keyword else">else</span><span class="token operator colon">:</span>
+      <span class="token keyword know">know</span><span class="token operator emdash">—</span><span class="token keyword nothing">nothing</span><span class="token operator emdash">—</span><span class="token operator dot">.</span></code></pre>
+            <div class="ref-term-origin">
+              <p class="ref-term-origin-heading">ORIGIN</p>
+              <p>adapted from the similar operator in other programming languages.</p>
+            </div>
+          </dd>
         </div>
-        <div>
-          <dt><span class="token not">not</span></dt>
-          <dd>Negates the following value. Similar to the ! (bang) operator in other programming languages.</dd>
+        <div id="false">
+          <dt><span class="ref-term">false</span> <span class="ref-term-ipa">| fôls |</span></dt>
+          <dd>
+            <p class="ref-term-pos">keyword</p>
+            <p class="ref-term-def">a keyword used to represent the logical value “false”.</p>
+            <pre><code><span class="token keyword let">let</span> <span class="token keyword var">me</span> <span class="token keyword be">be</span> <span class="token keyword false">false</span></code></pre>
+            <div class="ref-term-origin">
+              <p class="ref-term-origin-heading">ORIGIN</p>
+              <p>adapted from the similar operator in other programming languages.</p>
+            </div>
+          </dd>
         </div>
-        <div>
-          <dt><span class="token boolean">true</span></dt>
-          <dd>The logical value “true”.</dd>
+        <div id="if">
+          <dt><span class="ref-term">if</span> <span class="ref-term-ipa">| if |</span></dt>
+          <dd>
+            <p class="ref-term-pos">keyword</p>
+            <p class="ref-term-def">a keyword used to perform the actions in the following block if the given condition is true.</p>
+            <pre><code><span class="token keyword if">if</span><span class="token operator emdash">—</span><span class="token keyword var">you</span> <span class="token keyword and">and</span> <span class="token keyword var">I</span><span class="token operator emdash">—</span><span class="token operator colon">:</span>
+      <span class="token keyword know">know</span><span class="token operator emdash">—</span><span class="token keyword var">ourselves</span><span class="token operator emdash">—</span><span class="token operator dot">.</span></code></pre>
+            <div class="ref-term-origin">
+              <p class="ref-term-origin-heading">ORIGIN</p>
+              <p>adapted from the similar operator in other programming languages.</p>
+            </div>
+          </dd>
         </div>
-        <div>
-          <dt><span class="token boolean">false</span></dt>
-          <dd>The logical value “false”.</dd>
+        <div id="is">
+          <dt><span class="ref-term">is</span> <span class="ref-term-ipa">| iz |</span> <span class="ref-term-also">also <span class="ref-term-variant">am</span>, <span class="ref-term-variant">are</span></span></dt>
+          <dd>
+            <p class="ref-term-pos">keyword</p>
+            <p class="ref-term-def">a keyword used to compare two values.</p>
+            <pre><code><span class="token keyword if">if</span><span class="token operator emdash">—</span><span class="token keyword var">up</span> <span class="token keyword is">is</span> <span class="token keyword var">down</span><span class="token operator emdash">—</span><span class="token operator colon">:</span>
+    <span class="token keyword function">turn</span><span class="token operator emdash">—</span><span class="token keyword var">around</span><span class="token operator emdash">—</span><span class="token operator dot">.</span></code></pre>
+            <div class="ref-term-origin">
+              <p class="ref-term-origin-heading">ORIGIN</p>
+              <p>inspired by its use in English. Comparable to the two equal signs (==) operator in other programming languages.</p>
+            </div>
+          </dd>
         </div>
-        <div>
-          <dt><span class="token nothing">nothing</span></dt>
-          <dd>Equivalent to “null”.</dd>
+        <div id="let">
+          <dt><span class="ref-term">let</span> <span class="ref-term-ipa">| let |</span></dt>
+          <dd>
+            <p class="ref-term-pos">keyword</p>
+            <p class="ref-term-def">a keyword used to define or redefine a variable.</p>
+            <pre><code><span class="token keyword let">let</span> <span class="token keyword var">me</span> <span class="token keyword be">be</span> <span class="token keyword true">true</span></code></pre>
+            <div class="ref-term-origin">
+              <p class="ref-term-origin-heading">ORIGIN</p>
+              <p>adapted from its similar use in JavaScript and inspired by the optative mood, which is used to express a wish.</p>
+            </div>
+          </dd>
         </div>
-        <div>
-          <dt><span class="token print">print</span>, <span class="token know">know</span>, <span class="token say">say</span></dt>
-          <dd>Prints the following value.</dd>
+        <div id="maybe">
+          <dt><span class="ref-term">maybe</span> <span class="ref-term-ipa">| ˈmābē |</span></dt>
+          <dd>
+            <p class="ref-term-pos">function</p>
+            <p class="ref-term-def">a function used to generate a random true or false value.</p>
+            <pre><code><span class="token keyword let">let</span> <span class="token keyword var">me</span> <span class="token keyword be">be</span> <span class="token keyword maybe">maybe</span></code></pre>
+            <div class="ref-term-origin">
+              <p class="ref-term-origin-heading">ORIGIN</p>
+              <p>adapted from similar random generator functions in other programming languages.</p>
+            </div>
+          </dd>
         </div>
-        <div>
-          <dt><span class="token maybe">maybe</span></dt>
-          <dd>Equals true or false randomly.</dd>
+        <div id="not">
+          <dt><span class="ref-term">not</span> <span class="ref-term-ipa">| nɒt |</span></dt>
+          <dd>
+            <p class="ref-term-pos">keyword</p>
+            <p class="ref-term-def">a keyword used to negate the following value.</p>
+            <pre><code><span class="token keyword if">if</span><span class="token operator emdash">—</span><span class="token keyword not">not</span> <span class="token keyword var">right</span><span class="token operator emdash">—</span><span class="token operator colon">:</span>
+    <span class="token keyword function">make</span><span class="token operator emdash">—</span><span class="token keyword var">left</span><span class="token operator emdash">—</span><span class="token operator dot">.</span></code></pre>
+            <div class="ref-term-origin">
+              <p class="ref-term-origin-heading">ORIGIN</p>
+              <p>inspired by its use in both Python and English. Comparable to the bang (!) operator in other programming languages.</p>
+            </div>
+          </dd>
         </div>
-        <div>
-          <dt><span class="token and">and</span></dt>
-          <dd>Compares two expressions and returns true if both are true.</dd>
+        <div id="nothing">
+          <dt><span class="ref-term">nothing</span> <span class="ref-term-ipa">| nɒθɪŋ |</span></dt>
+          <dd>
+            <p class="ref-term-pos">keyword</p>
+            <p class="ref-term-def">a keyword used to represent the “nothing” value.</p>
+            <pre><code><span class="token keyword let">let</span> <span class="token keyword var">me</span> <span class="token keyword be">be</span> <span class="token keyword nothing">nothing</span></code></pre>
+            <div class="ref-term-origin">
+              <p class="ref-term-origin-heading">ORIGIN</p>
+              <p>adapted from similar “null” or “none” keywords in other programming languages.</p>
+            </div>
+          </dd>
         </div>
-        <div>
-          <dt><span class="token or">or</span></dt>
-          <dd>Compares two expressions and returns true if one or both are true.</dd>
+        <div id="or">
+          <dt><span class="ref-term">or</span> <span class="ref-term-ipa">| ôr |</span></dt>
+          <dd>
+            <p class="ref-term-pos">keyword</p>
+            <p class="ref-term-def">a keyword used to evaluate whether at least one of the two expressions is true.</p>
+            <pre><code><span class="token keyword if">if</span><span class="token operator emdash">—</span><span class="token keyword var">you</span> <span class="token keyword or">or</span> <span class="token keyword var">I</span><span class="token operator emdash">—</span><span class="token operator colon">:</span>
+      <span class="token keyword know">know</span><span class="token operator emdash">—</span><span class="token keyword var">ourselves</span><span class="token operator emdash">—</span><span class="token operator dot">.</span></code></pre>
+            <div class="ref-term-origin">
+              <p class="ref-term-origin-heading">ORIGIN</p>
+              <p>adapted from the similar operator in Python.</p>
+            </div>
+          </dd>
         </div>
-        <div>
-          <dt><span class="token if">if</span></dt>
-          <dd>Performs the actions in the block if the condition is true.</dd>
+        <div id="print">
+          <dt><span class="ref-term">print</span> <span class="ref-term-ipa">| print |</span></dt>
+          <dd>
+            <p class="ref-term-pos">function</p>
+            <p class="ref-term-def">a function used to print the following value.</p>
+            <pre><code><span class="token keyword print">print</span><span class="token operator emdash">—</span><span class="token keyword var">myself</span><span class="token operator emdash">—</span></code></pre>
+            <div class="ref-term-origin">
+              <p class="ref-term-origin-heading">ORIGIN</p>
+              <p>adapted from similar functions in other programming languages.</p>
+            </div>
+          </dd>
         </div>
-        <div>
-          <dt><span class="token else">else</span></dt>
-          <dd>Follows an if statement and executes if the condition is false.</dd>
+        <div id="true">
+          <dt><span class="ref-term">true</span> <span class="ref-term-ipa">| truː |</span></dt>
+          <dd>
+            <p class="ref-term-pos">keyword</p>
+            <p class="ref-term-def">a keyword used to represent the logical value “true”.</p>
+            <pre><code><span class="token keyword let">let</span> <span class="token keyword var">me</span> <span class="token keyword be">be</span> <span class="token keyword true">true</span></code></pre>
+            <div class="ref-term-origin">
+              <p class="ref-term-origin-heading">ORIGIN</p>
+              <p>adapted from the similar operator in other programming languages.</p>
+            </div>
+          </dd>
         </div>
-        <div>
-          <dt><span class="token while">while</span></dt>
-          <dd>Performs the actions in the block repeatedly while the condition is true.</dd>
+        <div id="while">
+          <dt><span class="ref-term">while</span> <span class="ref-term-ipa">| wīl |</span></dt>
+          <dd>
+            <p class="ref-term-pos">keyword</p>
+            <p class="ref-term-def">a keyword used to perform the actions in the following block repeatedly while the condition is true.</p>
+            <pre><code><span class="token keyword while">while</span><span class="token operator emdash">—</span><span class="token keyword var">you</span> <span class="token keyword and">and</span> <span class="token keyword var">I</span><span class="token operator emdash">—</span><span class="token operator colon">:</span>
+      <span class="token keyword know">know</span><span class="token operator emdash">—</span><span class="token keyword var">ourselves</span><span class="token operator emdash">—</span><span class="token operator dot">.</span></code></pre>
+            <div class="ref-term-origin">
+              <p class="ref-term-origin-heading">ORIGIN</p>
+              <p>adapted from the similar operator in other programming languages.</p>
+            </div>
+          </dd>
         </div>
       </dl>
     </div>
