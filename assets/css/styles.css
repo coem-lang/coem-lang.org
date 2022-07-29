@@ -330,23 +330,31 @@ sup {
 
 /* REFERENCE */
 
-.toc-container {
-  /* position: fixed; */
-  /* top: 0; */
-  /* height: 100vh; */
+.ref-toc {
+  position: initial;
 }
 
-@media (min-width: 800px) {
-  .ref-toc {
-    position: fixed;
-    top: 18vh;
-    left: 6vw;
+  @media (min-width: 1200px) {
+    .ref-toc {
+      position: fixed;
+      top: 18vh;
+      left: 6vw;
+    }
   }
-}
 
 .ref-toc ul {
   padding-left: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
 }
+
+  @media (min-width: 1200px) {
+    .ref-toc ul {
+      display: initial;
+      gap: initial;
+    }
+  }
 
 .ref-toc li {
   list-style-type: none;
