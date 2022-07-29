@@ -46,7 +46,7 @@
 
     <div class="toc-container">
       <div class="sidenote ref-toc">
-        <p>Operators</p>
+        <p><a href="#operators">Operators</a></p>
         <ul>
           <li><a href="#ampersand">ampersand</a></li>
           <li><a href="#colon">colon</a></li>
@@ -56,7 +56,7 @@
           <li><a href="#em-dash">em dash</a></li>
           <li><a href="#quotation-marks">quotation marks</a></li>
         </ul>
-        <p>Keywords</p>
+        <p><a href="#keywords">Keywords</a></p>
         <ul>
           <li><a href="#and">and</a></li>
           <li><a href="#be">be</a></li>
@@ -65,19 +65,22 @@
           <li><a href="#if">if</a></li>
           <li><a href="#is">is</a></li>
           <li><a href="#let">let</a></li>
-          <li><a href="#maybe">maybe</a></li>
           <li><a href="#not">not</a></li>
           <li><a href="#nothing">nothing</a></li>
           <li><a href="#or">or</a></li>
-          <li><a href="#print">print</a></li>
           <li><a href="#true">true</a></li>
           <li><a href="#while">while</a></li>
+        </ul>
+        <p><a href="#functions">Functions</a></p>
+        <ul>
+          <li><a href="#maybe">maybe</a></li>
+          <li><a href="#print">print</a></li>
         </ul>
       </div>
     </div>
 
     <div>
-      <h2>Operators</h2>
+      <h2 id="operators">Operators</h2>
       <dl class="ref-list">
         <div id="ampersand">
           <dt><span class="ref-term">ampersand (&)</span> <span class="ref-term-ipa">| ˈampərˌsand |</span></dt>
@@ -172,7 +175,7 @@
     </div>
 
     <div>
-      <h2>Keywords</h2>
+      <h2 id="keywords">Keywords</h2>
       <dl class="ref-list">
         <div id="and">
           <dt><span class="ref-term">and</span> <span class="ref-term-ipa">| an(d) |</span></dt>
@@ -264,18 +267,6 @@
             </div>
           </dd>
         </div>
-        <div id="maybe">
-          <dt><span class="ref-term">maybe</span> <span class="ref-term-ipa">| ˈmābē |</span></dt>
-          <dd>
-            <p class="ref-term-pos">function</p>
-            <p class="ref-term-def">a function used to generate a random true or false value.</p>
-            <pre><code><span class="token keyword let">let</span> <span class="token keyword var">me</span> <span class="token keyword be">be</span> <span class="token keyword maybe">maybe</span></code></pre>
-            <div class="ref-term-origin">
-              <p class="ref-term-origin-heading">ORIGIN</p>
-              <p>adapted from similar random generator functions in other programming languages.</p>
-            </div>
-          </dd>
-        </div>
         <div id="not">
           <dt><span class="ref-term">not</span> <span class="ref-term-ipa">| nɒt |</span></dt>
           <dd>
@@ -314,18 +305,6 @@
             </div>
           </dd>
         </div>
-        <div id="print">
-          <dt><span class="ref-term">print</span> <span class="ref-term-ipa">| print |</span></dt>
-          <dd>
-            <p class="ref-term-pos">function</p>
-            <p class="ref-term-def">a function used to print the following value.</p>
-            <pre><code><span class="token keyword print">print</span><span class="token operator emdash">—</span><span class="token keyword var">myself</span><span class="token operator emdash">—</span></code></pre>
-            <div class="ref-term-origin">
-              <p class="ref-term-origin-heading">ORIGIN</p>
-              <p>adapted from similar functions in other programming languages.</p>
-            </div>
-          </dd>
-        </div>
         <div id="true">
           <dt><span class="ref-term">true</span> <span class="ref-term-ipa">| truː |</span></dt>
           <dd>
@@ -348,6 +327,36 @@
             <div class="ref-term-origin">
               <p class="ref-term-origin-heading">ORIGIN</p>
               <p>adapted from the similar operator in other programming languages.</p>
+            </div>
+          </dd>
+        </div>
+      </dl>
+    </div>
+
+    <div>
+      <h2 id="functions">Functions</h2>
+      <dl class="ref-list">
+        <div id="maybe">
+          <dt><span class="ref-term">maybe</span> <span class="ref-term-ipa">| ˈmābē |</span></dt>
+          <dd>
+            <p class="ref-term-pos">function</p>
+            <p class="ref-term-def">a function used to generate a random true or false value.</p>
+            <pre><code><span class="token keyword let">let</span> <span class="token keyword var">me</span> <span class="token keyword be">be</span> <span class="token keyword maybe">maybe</span></code></pre>
+            <div class="ref-term-origin">
+              <p class="ref-term-origin-heading">ORIGIN</p>
+              <p>adapted from similar random generator functions in other programming languages.</p>
+            </div>
+          </dd>
+        </div>
+        <div id="print">
+          <dt><span class="ref-term">print</span> <span class="ref-term-ipa">| print |</span></dt>
+          <dd>
+            <p class="ref-term-pos">function</p>
+            <p class="ref-term-def">a function used to print the following value.</p>
+            <pre><code><span class="token keyword print">print</span><span class="token operator emdash">—</span><span class="token keyword var">myself</span><span class="token operator emdash">—</span></code></pre>
+            <div class="ref-term-origin">
+              <p class="ref-term-origin-heading">ORIGIN</p>
+              <p>adapted from similar functions in other programming languages.</p>
             </div>
           </dd>
         </div>
