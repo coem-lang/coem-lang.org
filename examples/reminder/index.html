@@ -48,14 +48,13 @@
     <div class="coem">
       <pre><code><span class="token comment"><span class="symbol">†</span> this is a reminder</span>
 
-<span class="token to">to</span> <span class="token var">breathing</span><span class="token operator emdash">—</span><span class="token operator emdash">—</span><span class="token operator colon">:</span>
+<span class="token to">to</span> <span class="token var">breathe?</span><span class="token operator emdash">—</span><span class="token operator emdash">—</span><span class="token operator colon">:</span>
     <span class="token comment"><span class="symbol">†</span> in and out, and thus to</span>
-    <span class="token know">know</span><span class="token operator emdash">—</span><span class="token var">myself</span><span class="token operator emdash">—</span> <span class="token comment">† present</span>
-    <span class="token operator ampersand">&</span> <span class="token nothing">nothing</span><span class="token operator dot">.</span>
+    <span class="token know">know</span><span class="token operator emdash">—</span><span class="token var">myself</span><span class="token operator emdash">—</span><span class="token operator dot">.</span>
 
 <span class="token let">let</span> <span class="token var memyselfI">me|myself|I</span> <span class="token be">be</span> <span class="token string"><span class="quote">“</span>present<span class="quote">”</span></span>
-<span class="token while">while</span><span class="token operator emdash">—</span><span class="token var">I</span> <span class="token comparison">am</span> <span class="token string"><span class="quote">“</span>present<span class="quote">”</span></span><span class="token operator emdash">—</span><span class="token operator colon">:</span>
-    <span class="token let">let</span> <span class="token var">me</span> <span class="token be">be</span> <span class="token var">breathing</span><span class="token operator emdash">—</span><span class="token operator emdash">—</span><span class="token operator dot">.</span></code></pre>
+<span class="token if">if</span><span class="token operator emdash">—</span><span class="token var">I</span> <span class="token comparison">am</span> <span class="token string"><span class="quote">“</span>present<span class="quote">”</span></span><span class="token operator emdash">—</span><span class="token operator colon">:</span>
+    <span class="token let">let</span> <span class="token var">me</span> <span class="token be">be</span> <span class="token var">breath</span><span class="token operator emdash">—</span><span class="token operator emdash">—</span><span class="token operator dot">.</span></code></pre>
     </div>
 
     <div>
@@ -64,24 +63,21 @@
       <p>This coem begins with a comment, which begins with a † (dagger). The text in comments isn’t parsed by the interpreter, so you can write anything in them.</p>
       <pre><code><span class="token comment"><span class="symbol">†</span> this is a reminder</span></code></pre>
 
-      <p>Then, we define a variable that matches me, myself, or I, and set it to the string value of “present”.</p>
-      <pre><code><span class="token let">let</span> <span class="token var memyselfI">me|myself|I</span> <span class="token be">be</span> <span class="token string"><span class="quote">“</span>present<span class="quote">”</span></span></code></pre>
-
-      <p>In a while statement, we ask if that variable, which we refer to as I, is equal to the string value of “present”. It is, so we set it to the return value of the function named breathing.</p>
-      <pre><code><span class="token while">while</span><span class="token operator emdash">—</span><span class="token var">I</span> <span class="token comparison">am</span> <span class="token string"><span class="quote">“</span>present<span class="quote">”</span></span><span class="token operator emdash">—</span><span class="token operator colon">:</span>
-    <span class="token let">let</span> <span class="token var">me</span> <span class="token be">be</span> <span class="token var">breathing</span><span class="token operator emdash">—</span><span class="token operator emdash">—</span><span class="token operator dot">.</span></code></pre>
-
-      <p>Now, we define that function named breathing. It takes no arguments, so nothing is written between the two em dashes.</p>
-      <pre><code><span class="token to">to</span> <span class="token var">breathing</span><span class="token operator emdash">—</span><span class="token operator emdash">—</span><span class="token operator colon">:</span></code></pre>
+      <p>We define a function named breathe?. The question mark operator means matches can have zero or one of the previous token, so it can match either breath or breathe. The function takes no arguments, so nothing is written between the two em dashes.</p>
+      <pre><code><span class="token to">to</span> <span class="token var">breathe?</span><span class="token operator emdash">—</span><span class="token operator emdash">—</span><span class="token operator colon">:</span></code></pre>
 
       <p>Another comment in the body of the function. These can be helpful to add in bits of unconstrained language, if you feel like it!</p>
       <pre><code>   <span class="token comment"><span class="symbol">†</span> in and out, and thus to</span></code></pre>
 
-      <p>Here, the keyword know is an alias for print. This statement prints the value of the variable named myself in a comment to the side of the line.</p>
-      <pre><code>   <span class="token know">know</span><span class="token operator emdash">—</span><span class="token var">myself</span><span class="token operator emdash">—</span> <span class="token comment">† present</span></code></pre>
+      <p>Here, the keyword know is an alias for print. When the code is run, this statement prints the value of the variable named myself in a comment to the side of the line, as demonstrated below. The dot ends the function block.</p>
+      <pre><code>   <span class="token know">know</span><span class="token operator emdash">—</span><span class="token var">myself</span><span class="token operator emdash">—</span><span class="token operator dot">.</span> <span class="token comment">† present</span></code></pre>
 
-      <p>Remembering back, we had called the function expecting a return value. We give that value now, using the ampersand operator, which is similar to the return keyword in other languages. We return the value nothing, which is similar to the null keyword in other languages. Finally, a dot ends the function block.</p>
-      <pre><code>   <span class="token operator ampersand">&</span> <span class="token nothing">nothing</span><span class="token operator dot">.</span></code></pre>
+      <p>After this function block, we define a variable that matches me, myself, or I, and set it to the string value of “present”.</p>
+      <pre><code><span class="token let">let</span> <span class="token var memyselfI">me|myself|I</span> <span class="token be">be</span> <span class="token string"><span class="quote">“</span>present<span class="quote">”</span></span></code></pre>
+
+      <p>In an if statement, we ask if that variable, which we refer to as I, is equal to the string value of “present”. It is, so we call the function that we now call breath. The dot ends the if statement block.</p>
+      <pre><code><span class="token if">if</span><span class="token operator emdash">—</span><span class="token var">I</span> <span class="token comparison">am</span> <span class="token string"><span class="quote">“</span>present<span class="quote">”</span></span><span class="token operator emdash">—</span><span class="token operator colon">:</span>
+    <span class="token let">let</span> <span class="token var">me</span> <span class="token be">be</span> <span class="token var">breath</span><span class="token operator emdash">—</span><span class="token operator emdash">—</span><span class="token operator dot">.</span></code></pre>
     </div>
   </main>
 
