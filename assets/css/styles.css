@@ -48,14 +48,7 @@ li {
   margin: 1.5em 0;
 }
 
-.link-button {
-  display: block;
-  width: fit-content;
-  margin: auto;
-  border: 1px solid currentColor;
-  padding: 0.5em 0.8em;
-  border-radius: 2em;
-  text-decoration: none;
+.big-link {
   font-size: 1.5em;
 }
 
@@ -201,8 +194,13 @@ main {
 }
 
 main > div {
-  max-width: 600px;
+  width: 600px;
+  max-width: 100%;
   margin: auto;
+}
+
+main > div p {
+  width: 100%;
 }
 
 .intro {
@@ -217,21 +215,15 @@ main > div {
   }
 
 .intro blockquote {
+  margin: 0;
   line-height: 1;
   font-size: 2em;
   position: relative;
+  font-style: italic;
 }
 
-.intro blockquote::before {
-  content: "“";
-  position: absolute;
-  margin-left: -0.5em;
-}
-
-.intro blockquote::after {
-  content: "”";
-  position: absolute;
-  margin-right: -0.5em;
+.intro blockquote p {
+  margin-top: 2em;
 }
 
 .intro p {
@@ -242,6 +234,10 @@ main > div {
       font-size: 1.3161rem;
     }
   }
+
+.intro > p {
+  margin-top: 4em;
+}
 
 .intro p a {
   color: var(--secondary-accent-color);
@@ -379,8 +375,29 @@ sup {
   margin-left: 1em;
 }
 
-.ref-term-pos {
-  margin-bottom: -1em;
+.ref-term-def {
+  padding: 0;
+  counter-reset: li;
+}
+
+.ref-term-def li {
+  position: relative;
+  list-style-type: none;
+  margin-left: 1.5em;
+}
+
+.ref-term-def li::before {
+  position: absolute;
+  top: 0.1em;
+  left: -20px;        
+  width: 1.75em;
+  height: 1.75em;
+  margin-right: 12px;       
+  content: counter(li);
+  counter-increment: li;
+  font-weight: 600;
+  color: #aaa;
+  font-size: .9em;
 }
 
 .ref-term-def,
@@ -392,6 +409,7 @@ sup {
   font-family: "IBM Plex Sans", sans-serif;
   color: #818081;
   border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5em;
   font-size: 0.9em;
 }
 
