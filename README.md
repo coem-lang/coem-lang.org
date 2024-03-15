@@ -1,4 +1,4 @@
-# coem-web
+# coem-lang.org
 
 The Coem website, containing all relevant information and documentation about the language.
 
