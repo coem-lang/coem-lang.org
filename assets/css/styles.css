@@ -194,17 +194,13 @@ main {
 }
 
 main > div {
-  width: 600px;
-  max-width: 100%;
-  margin: auto;
-}
-
-main > div p {
-  width: 100%;
+  max-width: 600px;
+  margin-inline: auto;
 }
 
 .intro {
   max-width: 800px;
+  margin-inline: auto;
   font-size: 1.2em;
   text-align: center;
 }
