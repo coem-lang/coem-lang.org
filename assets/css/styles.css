@@ -352,6 +352,15 @@ sup {
 /* REFERENCE */
 
 .ref-toc {
+  color: var(--text-color);
+  font-size: 0.8em;
+}
+
+#toc-heading {
+  width: min-content;
+}
+
+.ref-toc {
   position: initial;
 }
 
@@ -364,22 +373,28 @@ sup {
   }
 
 .ref-toc ul {
-  padding-left: 2em;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
+  list-style-type: none;
 }
 
-  @media (min-width: 1200px) {
-    .ref-toc ul {
-      display: initial;
-      gap: initial;
-    }
-  }
+.ref-toc ul {
+  padding-left: 1rem;
+}
+
+.ref-toc > ul {
+  padding-left: 0;
+}
+
+.ref-toc > ul > li > a {
+  font-weight: bold;
+}
+
+.ref-toc > ul > li + li {
+  margin-top: 1rem
+}
 
 .ref-toc li {
-  list-style-type: none;
   margin: 0;
+  padding: 0;
 }
 
 .ref-list > div {
